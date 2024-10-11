@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" id="myform">
+      <label for="num1">first character</label><br />
+      <input type="text" id="num1" name="num1" required/><br />
+      <label for="num2">second character</label><br />
+      <input type="text" name="" id="num2" required/><br />
+      <button type="submit">calculate</button>
+    </form>
+    <div id="solution"></div>
+    <script>
+      //get the form to js and store it in a variable
+      let form = document.getElementById("myform");
+      //add event
+      form.addEventListener("submit",function(e){
+        //function e prevents page from refreshing
+        e.preventDefault()
+      
+      //get form data
+      let first_character=document.getElementById('num1').value
+      let second_character=document.getElementById('num2').value
+      let third_character=first_character+ " "+second_character
+      document.getElementById('solution').innerHTML=third_character
+    })
+    </script>
+  </body>
+</html>

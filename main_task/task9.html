@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    // Write a program called stars. It should prompt the user for a number, and it should print the number of stars till the number entered.
+// Example If rows is 5, it should print the following:
+// *
+// **
+// ***
+// ****
+// *****.....
+//  let num= Number(prompt("enter num"))
+//  for(i=0;i<num;i++){
+//     console.log("*".repeat(i))
+//  }
+
+ function print_stars(num){
+   let star="*"
+   for(i=0;i<num;i++){
+      console.log(star.repeat(i))
+   }
+   
+ }
+ let user_num=Number(prompt("enter your number: "))
+ let solution=print_stars(user_num)
+ console.log(solution)
+
+   </script> 
+</body>
+</html>

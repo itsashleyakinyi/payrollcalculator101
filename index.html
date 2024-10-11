@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="first">Ashley</h1>
+    <h1 id="last">Akinyi</h1>
+    <h1 id="full_name"></h1>
+    <img id="myimage" src="'pic_bulbon.gif'" style="width: 100px;">
+    <button onclick="document.getElementById(myimage).src='pic_bulbon.gif'">Turn on</button>
+    <button onclick="document.getElementById(myimage).src='pic_bulbon.gif'">Turn off</button>
+<script>
+   let first_name=document.getElementById("first").innerText
+   let last_name=document.getElementById("last").innerText
+   let full_name=first_name+last_name
+   document.write(full_name)
+</script>
+</body>
+</html>

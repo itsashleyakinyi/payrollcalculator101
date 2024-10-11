@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Write a program which gets a phone number from a form input or terminal. Validates the phone number by checking if it starts with +254.. or 07.. or 7… or 254.. or 01... or  1.. Convert the number to start with +254…
+    //   let phone_num = prompt("enter number");
+    //   if (phone_num.startsWith("+254" && phone_num.length == 13)) {
+    //     valid = "valid phone number" + phone_num;
+    //   } else if (phone_num.startsWith("07") && phone_num.length == 10) {
+    //     phone_num = "+254" + phone_num.slice(1);
+    //     valid = "valid phone number" + phone_num;
+    //   } else if (phone_num.startsWith("7") && phone_num.length == 9) {
+    //     phone_num = "+254" + phone_num;
+    //     valid = "valid phone number" + phone_num;
+    //   } else if (phone_num.startsWith("07") && phone_num.length == 10) {
+    //     phone_num = "+254" + phone_num.slice(0);
+    //     valid = "valid phone number" + phone_num;
+    //   } else if (phone_num.startsWith("254") && phone_num.length == 12) {
+    //     phone_num = "+" + phone_num;
+    //     valid = "valid phone number" + phone_num;
+    //   } else if (phone_num.startsWith("01") && phone_num.length == 10) {
+    //     phone_num = "+254" + phone_num.slice(1);
+    //     valid = "valid phone number" + phone_num;
+    //   } else if (phone_num.startsWith("1") && phone_num.length == 9) {
+    //     phone_num = "+254" + phone_num;
+    //     valid = "valid phone number" + phone_num;
+    //   } else {
+    //     valid = "invalid number";
+    //   }
+    //   console.log(valid);
+
+      function checknumber(phone_num) {
+        if (phone_num.startsWith("+254" && phone_num.length == 13)) {
+          valid = "valid phone number" + phone_num;
+        } else if (phone_num.startsWith("07") && phone_num.length == 10) {
+          phone_num = "+254" + phone_num.slice(1);
+          valid = "valid phone number" + phone_num;
+        } else if (phone_num.startsWith("7") && phone_num.length == 9) {
+          phone_num = "+254" + phone_num;
+          valid = "valid phone number" + phone_num;
+        } else if (phone_num.startsWith("07") && phone_num.length == 10) {
+          phone_num = "+254" + phone_num.slice(0);
+          valid = "valid phone number" + phone_num;
+        } else if (phone_num.startsWith("254") && phone_num.length == 12) {
+          phone_num = "+" + phone_num;
+          valid = "valid phone number" + phone_num;
+        } else if (phone_num.startsWith("01") && phone_num.length == 10) {
+          phone_num = "+254" + phone_num.slice(1);
+          valid = "valid phone number" + phone_num;
+        } else if (phone_num.startsWith("1") && phone_num.length == 9) {
+          phone_num = "+254" + phone_num;
+          valid = "valid phone number" + phone_num;
+        } else {
+          valid = "invalid number";
+        }
+        return valid;
+      }
+      let phonenumber=prompt("enter number: ")
+      let solution= checknumber(phonenumber)
+      console.log(solution)
+    </script>
+  </body>
+</html>

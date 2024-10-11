@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+          //    Implement a program that takes 3 users  inputs from the terminal or the Browser, and stores them in three variables. Return //the largest of the three. Do this without using the the inbuilt max () function!
+          // let user_1=Number(prompt("enter number"))
+          // let user_2=Number(prompt("enter number"))
+          // let user_3=Number(prompt("enter number"))
+          // if(user_1>user_2 && user_1>user_3){
+          //     num=user_1
+          //     input="user_1 is largest"
+          // }else if(user_2>user_1 && user_2>user_3){
+          //     num=user_2
+          //     input="user_2 is largest"
+          // }else{
+          //     num=user_3
+          //     input="user_3 is largest"
+          // }
+          // console.log(num + input)
+
+
+      function max(a,b,c){
+          let result=""
+          if(a>b && a>c){
+              result=a+"  is largest"
+          }else if(b>a && b>c){
+              result=b+" is largest"
+          }else{
+              result=c+" is largest"
+          }
+          return result
+      }
+           let user_1=Number(prompt("enter number"))
+          let user_2=Number(prompt("enter number"))
+          let user_3=Number(prompt("enter number"))
+          let solution=max(user_1,user_2,user_3)
+          console.log(solution)
+
+    </script>
+  </body>
+</html>

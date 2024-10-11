@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let fruits=["banana", "mango","pineapple","kiwi","apples"]
+      // fruits[5]="oranges"
+      // fruits[1]="Berries"
+      // fruits.unshift("ashley")
+      // console.log(fruits)
+
+      //     Assignment 1: Create an Array
+      // Create an array named colors with the following elements: 'red', 'green', 'blue'.
+      // Assignment 2: Access and Modify Array Elements
+      // Given the array colors, access the second element and change it to 'pink'. Then, print the modified array.
+      // Assignment 3: Determine the Length of an Array
+      // Given the array colors, determine its length and store it in a variable lengthOfColors. Then, print lengthOfColors.
+      // Assignment 4: Use .pop() Method
+      // Given the array colors, use the .pop() method to remove the last element from the array. Then, print the modified array.
+      let colors=["red", "green", "blue"];
+      colors.splice(1,1,"pink");
+      colors.pop();
+      console.log(colors);
+      let lengthOfColors=(colors.length);
+      console.log(lengthOfColors);
+      console.log(colors.pop);
+
+//       Assignment 1: Combine Arrays
+// Given two arrays arr1 and arr2, combine them into a single array combinedArray using the .concat() method. Then, remove the first element from combinedArray using the .shift() method. Finally, print the modified combinedArray.
+// Assignment 2: Extract Subarray
+// Given an array “sourceArray”, extract a subarray “extractedArray” from index 2 to index 4 using the .slice() method. Then, modify the extractedArray by replacing its elements with 'x', 'y', and 'z' using the .splice() method. Finally, print both the sourceArray and the modified extractedArray.
+let arr1=[1,2,3,4,5,6]
+console.log(arr1)
+let arr2=[7,8,9,10]
+console.log(arr2)
+let combinedArray=(arr1.concat(arr2))
+combinedArray.shift()
+console.log(combinedArray)
+let sourceArray=[11,12,13,14,15,16,17]
+console.log(sourceArray)
+let extractedArray=sourceArray.slice(2,5)
+console.log(extractedArray)
+extractedArray.splice
+
+
+      
+          </script>
+  </body>
+</html>

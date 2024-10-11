@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function that calculates the area of a triangle
+        function triangle_area(base,height){
+             area=0.5*base*height
+             return area
+        }
+         let triangle1=triangle_area(20,30)
+         console.log(triangle1)
+         let triangle2=triangle_area(25,2)
+         console.log(triangle2)
+         let triangle3=triangle_area(50,50)
+         console.log(triangle3)
+        //function that calculates the area of a rectangle
+        function rectangle_area(){
+            length=30
+            width=20
+            area=length*width
+            console.log(area)
+        }
+        rectangle_area()
+
+        //create a function that checks whether a number is an even number or odd number.(use parameters and arguments)
+        function checknumber(number){
+            let result =""
+            if (number % 2==0){
+                result="even"
+            }else{
+                result="odd"
+            }
+            return result
+
+        }
+        let user_input=Number(prompt("enter num: "))
+         let num1=checknumber(user_input)
+         console.log(num1)
+    </script>
+</body>
+</html>

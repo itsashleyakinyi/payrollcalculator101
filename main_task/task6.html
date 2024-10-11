@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Write a program that lets the user input a password. Give them only 4 attempts to check the passwords entered against “admin@123”. If the password is correct access is granted. After you show them a message , the account is blocked.
+      const correctpassword = "admin@123";
+      let attempts = 4;
+      function checkPassword() {
+        while (attempts > 0) {
+          let inputpassword = prompt("enter your password:");
+          if (inputpassword === correctpassword) {
+            alert("access is granted");
+            break;
+          } else {
+            attempts--;
+            alert(
+              "Incorrect password.You have" + attempts + "attempt(s) remaining"
+            );
+          }
+        }
+        if (attempts === 0) {
+          alert("account is blocked");
+        }
+      }
+      checkPassword();
+    </script>
+  </body>
+</html>
